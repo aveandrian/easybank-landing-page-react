@@ -25,6 +25,7 @@ body {
 }
 
 .header {
+  background: hsl(0, 0%, 98%);
   position: relative;
   overflow-x: hidden;
   overflow: visible;
@@ -35,9 +36,10 @@ body {
   justify-content: center;
   align-items: start;
   padding-inline: 10vw;
-  background-color: white;
+  padding-block: 7vh;
   gap: 3vh
 }
+
 .mockups, .intro {
   width: 30%;
   position: absolute;
@@ -73,14 +75,59 @@ body {
   width: 40%;
 }
 
-.under-test {
+
+.why {
+  background: hsl(220, 16%, 96%);
   position: relative;
-  z-index: 0;
-  height: 40vh;
   width: 100vw;
-  background-color: grey;
+  padding-block: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-inline: 10vw;
+  gap: 3vh
 }
 
+.why-title, .why-item-title {
+  color: hsl(233, 26%, 24%);
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.why-text, .why-item-text {
+  color: hsl(233, 8%, 62%);
+  font-size: 18px;
+  line-height: 1.5em;
+  width: 60%;
+}
+
+.why-text {
+  margin-bottom: 4vh;
+}
+
+.why-items-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5vw
+}
+
+.why-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 3vh
+}
+
+.why-item-title {
+  font-size: 1.5rem;
+}
+
+.why-item-text  {
+  width: 100%;
+  font-size: 1rem
+}
 
 @media screen and (max-width: 1050px) { 
   .intro {
@@ -97,6 +144,7 @@ body {
     right: 50%;
     transform: translateX(50%);
   }
+
   .header {
     gap: 0;
     height: fit-content;
@@ -109,6 +157,7 @@ body {
     margin-bottom: 2vh;
     font-size: 2.5rem;
   }
+
   .main-text {
     margin-bottom: 2vh;
     font-size: 1rem;
@@ -116,4 +165,5 @@ body {
   .main-title, .main-text {
     width: 95%;
   }
+
 }
