@@ -1,27 +1,29 @@
 import './App.css'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
     <>
-    <div className='test'></div>
+
+      <Navbar />
+      <section className='header'>
+        <picture>
+          <source srcSet='/images/bg-intro-mobile.svg' media='(max-width: 1050px)' />
+          <img src='/images/bg-intro-desktop.svg' className='intro' />
+        </picture>
+        <img src='/images/image-mockups.png' className='mockups' />
+        <h1 className='main-title'>Next generation digital banking</h1>
+
+        <p className='main-text'>Take your financial life online. Your Easybank account will be a one-stop-shop 
+        for spending, saving, budgeting, investing, and much more.</p>
+
+        <button className='invite-btn'>Request Invite</button>
+      </section>
+      <div className='under-test'></div>
       {/* <img src='/images/bg-intro-desktop.svg'></img>
       <img src='/images/image-mockups.png'></img> */}
-  Home
-  About
-  Contact
-  Blog
-  Careers
 
-  Request Invite
-
-
-
-  Next generation digital banking
-
-  Take your financial life online. Your Easybank account will be a one-stop-shop 
-  for spending, saving, budgeting, investing, and much more.
-
-  Request Invite
+ 
 
 
 
