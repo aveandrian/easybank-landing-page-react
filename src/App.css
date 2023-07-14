@@ -165,5 +165,25 @@ body {
   .main-title, .main-text {
     width: 95%;
   }
+  .why {
+    padding-inline: 5vw;
+    align-items: center;
+    text-align: center;
+  }
+
+  .why-text {
+    width: 100%;
+  }
+
+  .why-items-container {
+    grid-template-columns: 1fr;
+    gap: 5vh
+  }
+
+  .why-item {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
 }
