@@ -129,6 +129,60 @@ body {
   font-size: 1rem
 }
 
+.articles {
+  background: hsl(0, 0%, 98%);
+  position: relative;
+  width: 100vw;
+  padding-block: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-inline: 10vw;
+  gap: 5vh
+}
+
+.articles-title {
+  color: hsl(233, 26%, 24%);
+  font-weight: 300;
+  font-size: 2.7rem;
+}
+
+.articles-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3vw
+}
+
+.article-item-img{
+  width: 100%;
+}
+
+.article-item-content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 20px;
+}
+
+.article-item-author {
+  font-size: 0.6rem;
+  color: hsl(233, 8%, 62%);
+}
+
+.article-item-title {
+  font-size: 1.2rem;
+  color: hsl(233, 26%, 24%);
+  font-weight: 300;
+}
+
+.article-item-text {
+  color: hsl(233, 8%, 62%);
+  font-size: 0.8rem;
+  line-height: 1.5em;
+}
+
 @media screen and (max-width: 1050px) { 
   .intro {
     position: relative;
@@ -165,7 +219,8 @@ body {
   .main-title, .main-text {
     width: 95%;
   }
-  .why {
+
+  .why, .articles {
     padding-inline: 5vw;
     align-items: center;
     text-align: center;
@@ -175,7 +230,7 @@ body {
     width: 100%;
   }
 
-  .why-items-container {
+  .why-items-container, .articles-container {
     grid-template-columns: 1fr;
     gap: 5vh
   }
@@ -185,5 +240,4 @@ body {
     align-items: center;
     text-align: center;
   }
-
 }
