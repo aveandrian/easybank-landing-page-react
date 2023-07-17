@@ -4,6 +4,9 @@ import WhyItem from './components/WhyItem'
 import ArticleItem from './components/ArticleItem'
 import whyData from './whyData.json'
 import articlesData from './articlesData.json'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookSquare, faYoutube, faTwitter, faPinterest, faInstagram } from '@fortawesome/free-brands-svg-icons'
+
 
 function App() {
   return (
@@ -40,24 +43,40 @@ function App() {
         </div>
       </section>
       <footer>
-        
+        <div className='contacts'>
+          <img className='logo' src='/images/logo.svg' />
+          <div className='socials'>
+            <FontAwesomeIcon icon={faFacebookSquare} className='social-logo' />
+            <div className='youtube-icon-container' >
+              <FontAwesomeIcon icon={faYoutube} size='xs'/>
+            </div>
+            <FontAwesomeIcon icon={faTwitter} className='social-logo'/>
+            <FontAwesomeIcon icon={faPinterest} className='social-logo' />
+            <FontAwesomeIcon icon={faInstagram} className='social-logo' />
+          </div>
+        </div>
+        <div className='footer-links'>
+          <div className='footer-links-column'>
+            <a>About Us</a>
+            <a>Contact</a>
+            <a>Blog</a>
+          </div>
+          <div className='footer-links-column'>
+            <a>Careers</a>
+            <a>Support</a>
+            <a>Privacy Policy</a>
+          </div>
+        </div>
+        <div className='footer-btn'>
+          <button className='invite-btn'>Request Invite</button>
+          <p className='credits'> © Easybank. All Rights Reserved</p>
+        </div>
       </footer>
-  
 
-  About Us
-  Contact
-  Blog
-  Careers
-  Support
-  Privacy Policy
-
-  Request Invite
-
-  © Easybank. All Rights Reserved
   
   <div className="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/aveandrian">aveandrian</a>.
   </div>
     </>
   )
