@@ -17,7 +17,7 @@ export default function Navbar(){
                 <a>Careers</a>
             </div>
             <button className='invite-btn'>Request Invite</button>
-            <div className={`nav-items-bg ${isOpen ? "opened" : ""}`}></div>
+            <div className={`nav-items-bg ${isOpen ? "opened" : ""}`} onClick={toggleIsOpen}></div>
             <img className='menu-btn' onClick={toggleIsOpen} src={`/images/icon-${isOpen ? "close" : "hamburger"}.svg`}></img>
         </nav>
     )
