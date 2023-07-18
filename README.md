@@ -19,4 +19,4 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<img width="792" alt="image" src="https://github.com/aveandrian/easybank-landing-page-react/assets/13519212/1983da57-9f1a-4d28-aa0b-aece7c38aa45">
