@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <section className='header'>
         <picture>
-          <source srcSet='/images/bg-intro-mobile.svg' media='(max-width: 1050px)' />
+          <source srcSet='/images/bg-intro-mobile.svg' media='(max-width: 65.625rem)' />
           <img src='/images/bg-intro-desktop.svg' className='intro' />
         </picture>
         <img src='/images/image-mockups.png' className='mockups' />
