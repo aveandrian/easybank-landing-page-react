@@ -16,6 +16,29 @@ nav {
     align-items: center;
     gap: 30px;
     color: hsl(233, 8%, 62%);
+    height: 100%;
+    
+}
+
+.nav-items a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-items a:hover {
+    cursor: pointer;
+}
+
+.nav-items a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: green;
 }
 
 .menu-btn {
